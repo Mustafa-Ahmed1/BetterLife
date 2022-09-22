@@ -6,7 +6,10 @@ import android.text.Editable
 import android.text.InputType
 import android.text.TextWatcher
 import android.view.View
-import android.widget.*
+import android.widget.CheckBox
+import android.widget.EditText
+import android.widget.ImageView
+import android.widget.TextView
 import androidx.core.view.children
 import androidx.core.view.isVisible
 import androidx.databinding.BindingAdapter
@@ -21,17 +24,11 @@ import com.karrar.betterlife.R
 import com.karrar.betterlife.data.DataCharts
 import com.karrar.betterlife.data.database.entity.Habit
 import com.karrar.betterlife.data.database.entity.Task
-import com.karrar.betterlife.ui.Charts
 import com.karrar.betterlife.ui.base.BaseAdapter
 
 @BindingAdapter(value = ["app:items"])
 fun <T> setRecyclerItems(view: RecyclerView, items: List<T>?) {
     (view.adapter as BaseAdapter<T>?)?.setItems(items ?: emptyList())
-}
-
-@BindingAdapter("app:doneToday")
-fun setEnableButton(view: View, doneToday: Boolean) {
-    view.isEnabled = !doneToday
 }
 
 @BindingAdapter("app:enableDone")
@@ -82,13 +79,8 @@ fun showCharts(view: AAChartView, dataCharts: DataCharts?) {
     }
 }
 
-@BindingAdapter(value = ["checkedChipButtonId"])
-fun setCheckedChipId(view: ChipGroup?, names: List<String>?) {
-
-}
-
 @InverseBindingAdapter(attribute = "checkedChipButtonId", event = "checkedChipButtonId")
-fun getChipId(view: ChipGroup?): List<String>? {
+fun getChipId(view: ChipGroup?): List<String> {
     val list = mutableListOf<String>()
     view?.children?.forEach {
         it as Chip
@@ -101,7 +93,7 @@ fun getChipId(view: ChipGroup?): List<String>? {
 
 @BindingAdapter("checkedChipButtonId")
 fun setChipsListener(view: ChipGroup?, attChange: InverseBindingListener) {
-    view?.setOnCheckedStateChangeListener { group, checkedId ->
+    view?.setOnCheckedStateChangeListener { _, _ ->
         attChange.onChange()
     }
 }

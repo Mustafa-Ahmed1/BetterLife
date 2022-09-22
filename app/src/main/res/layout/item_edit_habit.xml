@@ -13,7 +13,7 @@
 
         <variable
             name="listener"
-            type="com.karrar.betterlife.ui.HabitInteractionListener" />
+            type="com.karrar.betterlife.ui.habits.HabitInteractionListener" />
 
         <variable
             name="viewModel"

@@ -1,4 +1,4 @@
-package com.karrar.betterlife.ui
+package com.karrar.betterlife.ui.habits
 
 import com.karrar.betterlife.R
 import com.karrar.betterlife.data.database.entity.Habit

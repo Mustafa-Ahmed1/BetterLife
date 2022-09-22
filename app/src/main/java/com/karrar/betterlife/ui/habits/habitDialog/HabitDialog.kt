@@ -8,7 +8,7 @@ import androidx.navigation.fragment.navArgs
 import com.karrar.betterlife.R
 import com.karrar.betterlife.databinding.DialogHabitBinding
 import com.karrar.betterlife.ui.base.BaseDialogFragment
-import com.karrar.betterlife.util.DialogClickEvent
+import com.karrar.betterlife.util.states.DialogClickEvent
 import com.karrar.betterlife.util.EventObserve
 import com.karrar.betterlife.util.setWidthPercent
 import com.karrar.betterlife.util.showSnackMessage

@@ -6,9 +6,8 @@ import androidx.lifecycle.lifecycleScope
 import androidx.navigation.Navigation
 import com.karrar.betterlife.R
 import com.karrar.betterlife.databinding.FragmentHabitBinding
-import com.karrar.betterlife.ui.HabitAdapter
 import com.karrar.betterlife.ui.base.BaseFragment
-import com.karrar.betterlife.util.HabitFragmentClickEvent
+import com.karrar.betterlife.util.states.HabitFragmentClickEvent
 import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.launch
 

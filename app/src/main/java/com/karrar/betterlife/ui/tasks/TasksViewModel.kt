@@ -3,7 +3,6 @@ package com.karrar.betterlife.ui.tasks
 import androidx.lifecycle.*
 import com.karrar.betterlife.data.database.entity.Task
 import com.karrar.betterlife.data.repository.BetterRepository
-import com.karrar.betterlife.ui.TasksInteractionListener
 import com.karrar.betterlife.util.Event
 import kotlinx.coroutines.launch
 import java.util.*

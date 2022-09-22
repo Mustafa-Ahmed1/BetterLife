@@ -3,8 +3,8 @@ package com.karrar.betterlife.ui.habits.habitDialog
 import androidx.lifecycle.*
 import com.karrar.betterlife.data.database.entity.Habit
 import com.karrar.betterlife.data.repository.BetterRepository
-import com.karrar.betterlife.util.DialogClickEvent
-import com.karrar.betterlife.util.DialogState
+import com.karrar.betterlife.util.states.DialogClickEvent
+import com.karrar.betterlife.util.states.DialogState
 import com.karrar.betterlife.util.Event
 import kotlinx.coroutines.launch
 

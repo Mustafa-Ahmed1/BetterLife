@@ -21,6 +21,7 @@ class CustomSeekBar(
 
     @Synchronized
     override fun onDraw(canvas: Canvas) {
+
         // for seek bar line
         rect[0, height / 2 - seekbarHeight / 2, width] = height / 2 + seekbarHeight / 2
         paint.color = ContextCompat.getColor(context, R.color.black_30)

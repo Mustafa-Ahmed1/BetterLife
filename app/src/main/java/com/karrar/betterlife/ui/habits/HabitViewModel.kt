@@ -3,8 +3,7 @@ package com.karrar.betterlife.ui.habits
 import androidx.lifecycle.*
 import com.karrar.betterlife.data.database.entity.Habit
 import com.karrar.betterlife.data.repository.BetterRepository
-import com.karrar.betterlife.ui.HabitInteractionListener
-import com.karrar.betterlife.util.HabitFragmentClickEvent
+import com.karrar.betterlife.util.states.HabitFragmentClickEvent
 import kotlinx.coroutines.channels.Channel
 import kotlinx.coroutines.flow.receiveAsFlow
 import kotlinx.coroutines.launch
